@@ -1,0 +1,17 @@
+#!/bin/bash
+IFS=$'\n'
+files=`shuf -n30 -e *`
+for i in $files
+do
+playsong "$i"
+echo played "$i"
+done
+#do
+#echo $file
+#done
+#echo $( * | sort -R | head -n 1)
+#$(echo | ls | sort -R | head -n 1 | playsong)
+#for i in $( ls | sort -R | head -n $1)
+#do
+#	playsong "$i"
+#done

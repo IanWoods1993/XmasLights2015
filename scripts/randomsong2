@@ -1,0 +1,21 @@
+#!/bin/bash
+IFS=$'\n'
+files=`shuf -n$1 -e *.mp3`
+array=()
+for i in $files
+do
+array+=("$i")
+done
+for j in "${array[@]}"
+do
+echo "$j"
+done
+#do
+#echo $file
+#done
+#echo $( * | sort -R | head -n 1)
+#$(echo | ls | sort -R | head -n 1 | playsong)
+#for i in $( ls | sort -R | head -n $1)
+#do
+#	playsong "$i"
+#done

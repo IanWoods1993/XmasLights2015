@@ -1,0 +1,5 @@
+#!/bin/bash
+line=$(ps aux | grep "sudo python /home/pi/lightshowpi/py/synchronized_lights.py")
+psID=$(echo $line | awk -F ' ' '{print $2}')
+sudo kill $psID
+#root      3465  0.0  0.3   4588  1492 pts/0    S    23:28   0:00 sudo python /home/pi/lightshowpi/py/synchronized_lights.py --file=/home/pi/christmasSongs/OHolyNight.mp3

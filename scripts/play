@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo python ~/lightshowpi/py/synchronized_lights.py --file=/home/pi/lightshowpiSongs/$1
